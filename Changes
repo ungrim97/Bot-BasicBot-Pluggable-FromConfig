@@ -2,5 +2,6 @@ Revision history for Perl extension Bot-BasicBot-Pluggable-FromConfig
 
 {{$NEXT}}
 
+    - added module for running bots from config
     - original version
 

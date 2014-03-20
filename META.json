@@ -1,5 +1,5 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "Create a bot from a config file.",
    "author" : [
       "Mike Francis <ungrim97@gmail.com>"
    ],
@@ -43,15 +43,30 @@
       },
       "runtime" : {
          "requires" : {
+            "Bot::BasicBot::Pluggable" : "0.98",
+            "Carp" : "1.32",
+            "Config::JFDI" : "0.065",
+            "Data::Dumper" : "2.151",
             "perl" : "5.008005"
          }
       },
       "test" : {
          "requires" : {
-            "Test::More" : "0.98"
+            "Test::Modern" : "0.002"
          }
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/ungrim97/Bot-BasicBot-Pluggable-FromConfig/issues"
+      },
+      "homepage" : "https://github.com/ungrim97/Bot-BasicBot-Pluggable-FromConfig",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/ungrim97/Bot-BasicBot-Pluggable-FromConfig.git",
+         "web" : "https://github.com/ungrim97/Bot-BasicBot-Pluggable-FromConfig"
+      }
+   },
    "version" : "0.01"
 }
