@@ -1,0 +1,10 @@
+#!/usr/bin/env perl
+use strict;
+use warnings;
+use Bot::BasicBot::Pluggable::FromConfig;
+
+my $bot = Bot::BasicBot::Pluggable::FromConfig->new_with_config(
+    config => $ARGV[0],
+);
+$bot->run;
+
