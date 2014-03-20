@@ -105,6 +105,7 @@ A config hashref can also be specified and these items will be passed to the plu
 =head1 SEE ALSO
 
 L<Config::JFDI>
+
 L<Bot::BasicBot::Pluggable>
 
 =head1 LICENSE

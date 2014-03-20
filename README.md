@@ -59,6 +59,7 @@ A config hashref can also be specified and these items will be passed to the plu
 # SEE ALSO
 
 [Config::JFDI](https://metacpan.org/pod/Config::JFDI)
+
 [Bot::BasicBot::Pluggable](https://metacpan.org/pod/Bot::BasicBot::Pluggable)
 
 # LICENSE
