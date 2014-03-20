@@ -88,13 +88,13 @@ A arrayref of plugins are also accepted:
         "channels": ["#perl"],
         "plugins": [
             {
-                "Module": 'Karma',
+                "module": 'Karma',
                 "config": {
                     "karma_change_reponse": 0
                 },
             },
             {
-                "name": "Bot::BasicBot::Pluggable::Module::Auth",
+                "module": "Bot::BasicBot::Pluggable::Module::Auth",
             },
     }
 
