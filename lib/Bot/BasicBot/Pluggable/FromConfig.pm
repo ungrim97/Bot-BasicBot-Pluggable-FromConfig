@@ -52,10 +52,8 @@ sub new_with_config {
 
     croak 'No config param supplied.' unless $args{config};
 
-    $args{config} = {name => $args{config}} unless ref $args{config};
-
-    my $conf = Config::JFDI->open(%{$args{config}}) or croak "Unable to load config file for: ".$args{config}.'.'.Dumper $@;
-
+    $args{config} = {name => $args{config}} unless ref $args{config} eq 'HASH';
+    my $conf = Config::JFDI->open(%{$args{config}}) or croak "Unable to load config file for: ".$args{config}->{name};
     my @plugins = @{delete $conf->{plugins} || [] };
     my $bot = $class->new(%{$conf||{}});
 
