@@ -2,6 +2,8 @@ Revision history for Perl extension Bot-BasicBot-Pluggable-FromConfig
 
 {{$NEXT}}
 
+0.5 2014-03-21T15:10:47Z
+
     - allow string refs as config name arg as perl Config::JFDI docs
     - added tests for config file format loading
     - added module for running bots from config
