@@ -21,9 +21,9 @@ Bot::BasicBot::Pluggable::FromConfig - Create a bot from a config file.
 
 =head1 DESCRIPTION
 
-C<Bot::BasicBot::Pluggable::FromConfig> is a config loader for L<Bot::BasicBot::Pluggable> allowing all of you Bot configuration to be declared in its own file. It is largely based on L<Bot::BasicBot::Pluggable::WithConfig>. Its designed to allow for a wider degree of flexibility with its range of accepted config files.
+C<Bot::BasicBot::Pluggable::FromConfig> is a config loader for L<Bot::BasicBot::Pluggable> allowing all of your Bot configuration to be declared in its own file. It is largely based on L<Bot::BasicBot::Pluggable::WithConfig>. It's designed to allow for a wider degree of flexibility with its range of accepted config files.
 
-FromConfig uses Config::JFDI to load a config based on the name supplied to the config argument. This allows pretty much any config style you want and also allows for a '_local' file to override on a per instance bases if you need.
+FromConfig uses Config::JFDI to load a config based on the name supplied to the config argument. This allows pretty much any config style you want and also allows for a '_local' file to override on a per-instance bases if you need.
 
 =head1 Running a Bot
 
@@ -35,7 +35,7 @@ Alternatively you can create your own implementation of this in your own scripts
 
 =head2 new_with_config( config => 'my_bot' )
 
-This is the only method provided in this module beyond those described in L<Bot::BasicBot::Pluggable>. It accepts a hash as its arguments which must contain a config key. This key can either be the name of the config sans extension (which will be passed as the name param to Config::JFDI) or a hashref of params to pass through to Config::JFDI. 
+This is the only method provided in this module beyond those described in L<Bot::BasicBot::Pluggable>. It accepts a hash as its arguments which must contain a config key. This key can either be the name of the config sans extension (which will be passed as the name param to Config::JFDI) or a hashref of params to pass through to Config::JFDI.
 
 A new Bot::BasicBot::Pluggable::FromConfig object which inherits from L<Bot::BasicBot::Pluggable> is returned.
 
@@ -80,7 +80,7 @@ All attributes accepted by the constructor of L<Bot::BasicBot::Pluggable> and th
 
 =head2 plugins
 
-A arrayref of plugins are also accepted:
+An arrayref of plugins are also accepted:
 
     {
         "channels": ["#perl"],
@@ -96,7 +96,7 @@ A arrayref of plugins are also accepted:
             },
     }
 
-each should provide at minimum the name of the Module that implements the plugin. This can either be the full qualified name (Bot::BasicBot::Pluggable::Module::Name) or just the qualifying module name.
+Each should provide at minimum the name of the Module that implements the plugin. This can either be the full qualified name (Bot::BasicBot::Pluggable::Module::Name) or just the qualifying module name.
 
 A config hashref can also be specified and these items will be passed to the plugin objects set() method.
 
