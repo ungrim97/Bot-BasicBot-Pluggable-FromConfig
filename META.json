@@ -30,7 +30,7 @@
          "requires" : {
             "CPAN::Meta" : "0",
             "CPAN::Meta::Prereqs" : "0",
-            "Module::Build" : "0.38"
+            "Module::Build::Tiny" : "0.035"
          }
       },
       "develop" : {
@@ -68,5 +68,9 @@
          "web" : "https://github.com/ungrim97/Bot-BasicBot-Pluggable-FromConfig"
       }
    },
-   "version" : "0.5"
+   "version" : "0.5",
+   "x_contributors" : [
+      "Dominic Humphries <dominich@broadbean.com>",
+      "ungrim97 <ungrim97@hotmail.com>"
+   ]
 }
