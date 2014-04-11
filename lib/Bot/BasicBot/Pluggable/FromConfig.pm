@@ -3,7 +3,7 @@ use 5.008005;
 use strict;
 use warnings;
 
-our $VERSION = "0.5";
+our $VERSION = "0.6";
 
 =encoding utf-8
 
