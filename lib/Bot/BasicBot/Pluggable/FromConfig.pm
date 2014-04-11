@@ -27,7 +27,7 @@ FromConfig uses Config::JFDI to load a config based on the name supplied to the 
 
 =head1 Running a Bot
 
-This library provides a command line script called L<run_bot>. This provides a complete implementation of this. Documentation can be found there.
+This library provides a command line script called L<run_bot>. This provides a complete implementation of this module. Documentation can be found there.
 
 Alternatively you can create your own implementation of this in your own scripts. The simplest method is to call new_with_config() and pass it a config name and then call run on the returned Bot object.
 
@@ -99,6 +99,10 @@ An arrayref of plugins are also accepted:
 Each should provide at minimum the name of the Module that implements the plugin. This can either be the full qualified name (Bot::BasicBot::Pluggable::Module::Name) or just the qualifying module name.
 
 A config hashref can also be specified and these items will be passed to the plugin objects set() method.
+
+=head1 KNOW ISSUES
+
+There is known issue in Bot::BasicBot::Pluggable when using more recent version of Perl and POD::Checker. This will cause it to fail its t/release-pod-syntax test (https://rt.cpan.org/Public/Bug/Display.html?id=89806). Users should --force install B::BB::P before installing this module.
 
 =head1 SEE ALSO
 
